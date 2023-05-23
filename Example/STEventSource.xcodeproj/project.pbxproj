@@ -15,6 +15,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		842F4A842A1D0A5900325BF9 /* STEventSourceTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842F4A822A1D0A5900325BF9 /* STEventSourceTestViewController.swift */; };
+		842F4A852A1D0A5900325BF9 /* STEventSourceTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842F4A832A1D0A5900325BF9 /* STEventSourceTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,9 +31,9 @@
 
 /* Begin PBXFileReference section */
 		0317835F1EC9C44FB94A7BD4 /* Pods-STEventSource_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEventSource_Tests.debug.xcconfig"; path = "Target Support Files/Pods-STEventSource_Tests/Pods-STEventSource_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1144E5BE2C6F82918C2833C6 /* STEventSource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = STEventSource.podspec; path = ../STEventSource.podspec; sourceTree = "<group>"; };
+		1144E5BE2C6F82918C2833C6 /* STEventSource.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = STEventSource.podspec; path = ../STEventSource.podspec; sourceTree = "<group>"; };
 		2FEE18DF5AE3E1CB749B3ED0 /* Pods_STEventSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEventSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35317E4D8B8C95A276B288F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		35317E4D8B8C95A276B288F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		57CC01DFCFFC68058CDD7AA7 /* Pods_STEventSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEventSource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E85A70E236852005BEE4729 /* Pods-STEventSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEventSource_Example.release.xcconfig"; path = "Target Support Files/Pods-STEventSource_Example/Pods-STEventSource_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* STEventSource_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STEventSource_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +48,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7755726688B175155AADCC5F /* Pods-STEventSource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEventSource_Example.debug.xcconfig"; path = "Target Support Files/Pods-STEventSource_Example/Pods-STEventSource_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		80578476075AF864EEB4498B /* Pods-STEventSource_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STEventSource_Tests.release.xcconfig"; path = "Target Support Files/Pods-STEventSource_Tests/Pods-STEventSource_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B125BB74FC02E73EB7D0AAFE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		842F4A822A1D0A5900325BF9 /* STEventSourceTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STEventSourceTestViewController.swift; sourceTree = "<group>"; };
+		842F4A832A1D0A5900325BF9 /* STEventSourceTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STEventSourceTestViewController.xib; sourceTree = "<group>"; };
+		B125BB74FC02E73EB7D0AAFE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				842F4A822A1D0A5900325BF9 /* STEventSourceTestViewController.swift */,
+				842F4A832A1D0A5900325BF9 /* STEventSourceTestViewController.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -156,7 +162,6 @@
 				0317835F1EC9C44FB94A7BD4 /* Pods-STEventSource_Tests.debug.xcconfig */,
 				80578476075AF864EEB4498B /* Pods-STEventSource_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842F4A852A1D0A5900325BF9 /* STEventSourceTestViewController.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -331,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842F4A842A1D0A5900325BF9 /* STEventSourceTestViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -419,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

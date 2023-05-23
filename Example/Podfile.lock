@@ -1,0 +1,16 @@
+PODS:
+  - STEventSource (0.1.0)
+
+DEPENDENCIES:
+  - STEventSource (from `../`)
+
+EXTERNAL SOURCES:
+  STEventSource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  STEventSource: 64603f9a9386f64c6839ef7dbc3b78ba64fe06a0
+
+PODFILE CHECKSUM: 39e7916c567fe903257337acf03c852d13effeca
+
+COCOAPODS: 1.12.1
