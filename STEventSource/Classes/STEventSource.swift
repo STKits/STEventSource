@@ -152,7 +152,7 @@ public class STEventSource: NSObject, URLSessionDataDelegate {
                     self.onMessageCallBack?(event)
                 }
                 
-                if let eventName = event.event, let listener = eventListeners[eventName] {
+                if let eventName = event.event, let listener = self.eventListeners[eventName] {
                     listener(event)
                 }
                 
