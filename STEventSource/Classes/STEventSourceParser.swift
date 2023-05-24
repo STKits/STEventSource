@@ -13,7 +13,7 @@ import Foundation
 
 class STEventSourceParser: NSObject {
     
-    
+    /// 事件消息之间分隔符
     public static let doubleNewlineDelimiter = "\n\n".data(using: .utf8)!
     
     public let delimiter: Data
@@ -24,11 +24,13 @@ class STEventSourceParser: NSObject {
         self.delimiter = delimiter
     }
     
+    /// 解析成事件消息模型
     public func parse(_ data: Data) -> [STEventSourceMessage] {
         buffer.append(data)
         return extractMessagesFromBuffer().compactMap(STEventSourceMessage.init(parsing:))
     }
 
+    /// 去除无用分隔符后的utf8字符串
     private func extractMessagesFromBuffer() -> [String] {
         var messages = [String]()
         var searchRange: Range<Data.Index> = buffer.startIndex..<buffer.endIndex

@@ -11,17 +11,21 @@
 
 import Foundation
 
+/// 消息事件
 public struct STEventSourceMessage {
-    
+    /// 名称
     public var event: String?
+    /// 消息id
     public var id: String?
+    /// 数据体
     public var data: String?
+    /// 重试时间（毫秒）
     public var retry: String?
     
 }
 
 extension STEventSourceMessage {
-    
+    /// 解析每一个消息
     init?(parsing string: String) {
         let fields = string.components(separatedBy: "\n").compactMap(Field.init(parsing:))
         for field in fields {
@@ -41,7 +45,7 @@ extension STEventSourceMessage {
 }
 
 extension STEventSourceMessage {
-    
+    /// 字段
     struct Field {
         
         enum Key: String {
@@ -54,6 +58,7 @@ extension STEventSourceMessage {
         var key: Key
         var value: String
         
+        /// 解析每个消息里的字段名和字段值
         init?(parsing string: String) {
             let scanner = Scanner(string: string)
             guard let key = scanner.scanUpToString(":").flatMap(Key.init(rawValue:)) else {

@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'STEventSource'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Server Sent Events'
   s.description      = <<-DESC
   Swift Server Sent Events
@@ -18,5 +18,4 @@ Pod::Spec.new do |s|
 
   s.source_files = 'STEventSource/Classes/**/*'
   
-
 end

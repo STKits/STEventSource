@@ -7,7 +7,7 @@
 //  Date:   2023/5/23
 //
 //  Copyright © 2023 CocoaPods. All rights reserved.
-//  关联链接：https://html.spec.whatwg.org/multipage/server-sent-events.html
+//  参考链接：https://html.spec.whatwg.org/multipage/server-sent-events.html
 //
 
 import Foundation
@@ -23,14 +23,18 @@ public class STEventSource: NSObject, URLSessionDataDelegate {
     /// 配置
     public private(set) var config:Config
     
+    /// URL会话
     private var urlSession: URLSession?
+    /// URL请求
     private var urlRequest: URLRequest?
+    /// URL会话任务
     private var dataTask:URLSessionDataTask?
     
+    /// 事件解析器
     private let eventSourceParser = STEventSourceParser()
-    
+    /// 监听事件字典
     private var eventListeners: [String: (STEventSourceMessage) -> Void] = [:]
-    
+    /// 回调线程
     private var callBackQueue:DispatchQueue
     
     /// 根据指定配置初始化
@@ -48,21 +52,21 @@ public class STEventSource: NSObject, URLSessionDataDelegate {
         self.onOpenCallBack = callback
     }
     
-    /// 收到message 或者 无 事件回调
+    /// 收到事件为message或者nil回调
     private var onMessageCallBack:((STEventSourceMessage)->Void)?
     public func onMessage(_ callback:@escaping ((STEventSourceMessage) -> Void)) {
         
         self.onMessageCallBack = callback
     }
     
-    /// 收到事件回调
+    /// 收到所有事件回调
     private var onEventCallBack:((STEventSourceMessage)->Void)?
     public func onEvent(_ callback:@escaping ((STEventSourceMessage) -> Void)) {
         self.onEventCallBack = callback
     }
     
     /// 结束回调（多种原因触发）
-    ///  服务器关闭连接 或者 网络问题
+    /// 服务器关闭连接 或者 网络问题 或者超时 等等
     private var onCompleteCallBack:((_ statusCode: Int?, _ error: Error?)->Void)?
     public func onComplete(_ callback:@escaping ((_ statusCode: Int?, _ error: Error?) -> Void)) {
         self.onCompleteCallBack = callback
@@ -162,9 +166,10 @@ public class STEventSource: NSObject, URLSessionDataDelegate {
     public func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         readyState = .closed
         
-        ///  HTTP 204 可以重新连接
+        ///  比如HTTP 204 可以重新连接
         let statusCode = (task.response as? HTTPURLResponse)?.statusCode
         
+        /// 可由上层继续判断处理
         callBackQueue.async { [weak self] in
             self?.onCompleteCallBack?(statusCode, error)
         }
@@ -172,7 +177,7 @@ public class STEventSource: NSObject, URLSessionDataDelegate {
     }
     
     /// 重定向
-    /// HTTP 301 and 307
+    /// 比如 HTTP 301 and 307
     public func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {
         var newRequest = request
         config.headers?.forEach { newRequest.setValue($1, forHTTPHeaderField: $0) }
