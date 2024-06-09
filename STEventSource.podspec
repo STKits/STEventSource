@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'STEventSource'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'Server Sent Events'
   s.description      = <<-DESC
   Swift Server Sent Events
@@ -16,6 +16,10 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'STEventSource/Classes/**/*'
+  s.source_files = 'STEventSource/Classes/*.swift'
+  
+  s.resource_bundles = {
+    'STEventSource_Privacy' => ['STEventSource/Classes/PrivacyInfo.xcprivacy']
+  }
   
 end

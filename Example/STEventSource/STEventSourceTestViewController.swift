@@ -22,14 +22,14 @@ class STEventSourceTestViewController: UIViewController {
     private let url = "https://api.openai.com/v1/chat/completions"
 //        let url =  "http://127.0.0.1:3000/push/sse"
     private lazy var serverURL = URL(string: url)!
-    private let headers = ["Authorization":"Bearer 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",
+    private let headers = ["Authorization":"Bearer sk",
                            "Content-Type": "application/json"]
     private let jsonBody:[String : Any] = [
-        "model": "gpt-3.5-turbo",
+        "model": "gpt-4o",
         "messages": [
             [
                 "role": "user",
-                "content": "写一篇100字自我介绍"
+                "content": "请自我介绍一下"
             ]
         ],
         "stream": true]

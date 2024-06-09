@@ -1,6 +1,6 @@
 //
 //  STEventSourceParser.swift
-//  STEventSource_Example
+//  STEventSource
 //
 //  Author: yyb 
 //  Email:  cnjsyyb@163.com
