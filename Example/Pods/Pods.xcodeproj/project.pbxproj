@@ -18,7 +18,7 @@
 		A4D1E71531A308CA0F6578B768EF0FDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		BD84954E682BD3730184716516CC30B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E82260F47F79D2CB21910133AEC44478 /* Pods-STEventSource_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9A92833FCB15525EC680CA37211F5A9 /* Pods-STEventSource_Example-dummy.m */; };
-		F0378BDB31FD818E6DBED4CAB105C938 /* STEventSource-STEventSource_Privacy in Resources */ = {isa = PBXBuildFile; fileRef = B159723C874A96F1271EE8A01CAFAF0F /* STEventSource-STEventSource_Privacy */; };
+		F0378BDB31FD818E6DBED4CAB105C938 /* STEventSource_Privacy.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B159723C874A96F1271EE8A01CAFAF0F /* STEventSource_Privacy.bundle */; };
 		F3012B4BCADD43FDB4C13A333E07D971 /* STEventSource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC85DEB42985830B3DBA02B304C8962 /* STEventSource-dummy.m */; };
 		FE2B5C3A7B233BE81AAE81DD205CB451 /* Pods-STEventSource_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6276FF7DCEFB3EDA580B663EE341EDC /* Pods-STEventSource_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -53,27 +53,27 @@
 		1474C3B29E7EE691F8B8750C29AB21C0 /* STEventSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = STEventSource.swift; path = STEventSource/Classes/STEventSource.swift; sourceTree = "<group>"; };
 		14DE2C43276D71B1EF97C97B34142AD0 /* STEventSource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STEventSource-prefix.pch"; sourceTree = "<group>"; };
 		18E48CAD9D09BF23BAA49B5A5C2B3C3E /* Pods-STEventSource_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STEventSource_Example-umbrella.h"; sourceTree = "<group>"; };
-		1A45BD68739D366CBE99A05F51A85B98 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1A45BD68739D366CBE99A05F51A85B98 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		241D23DC39F4C8142AAD14222E90B933 /* Pods-STEventSource_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STEventSource_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2BAD95118E8FCBA6D51E674570B432E7 /* STEventSource.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = STEventSource.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2BAD95118E8FCBA6D51E674570B432E7 /* STEventSource.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = STEventSource.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		4022C3BA4D517AD7206AAF14BC93C593 /* ResourceBundle-STEventSource_Privacy-STEventSource-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-STEventSource_Privacy-STEventSource-Info.plist"; sourceTree = "<group>"; };
-		5572540F6EE06EFDEEA7F7201381C89C /* Pods-STEventSource_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-STEventSource_Tests"; path = Pods_STEventSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5572540F6EE06EFDEEA7F7201381C89C /* Pods_STEventSource_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEventSource_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EF363FB410FF8A387F6795D267DCD6 /* Pods-STEventSource_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STEventSource_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5EC85DEB42985830B3DBA02B304C8962 /* STEventSource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "STEventSource-dummy.m"; sourceTree = "<group>"; };
-		6225B01F7E475545392C5B6775010F7B /* Pods-STEventSource_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-STEventSource_Example"; path = Pods_STEventSource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6225B01F7E475545392C5B6775010F7B /* Pods_STEventSource_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STEventSource_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E10AEF4A9B27585B11814F11C02EFEE /* Pods-STEventSource_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-STEventSource_Example-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74227B14622420B958DBC274981DA078 /* STEventSource */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = STEventSource; path = STEventSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74227B14622420B958DBC274981DA078 /* STEventSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STEventSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFD85F97071AF6868A4EC78D0553244 /* Pods-STEventSource_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STEventSource_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		831A9C7679FA5EAA1884FE2B88F63C14 /* Pods-STEventSource_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STEventSource_Example-Info.plist"; sourceTree = "<group>"; };
 		8442C30B4114BDCB237791E88FBBFBFD /* Pods-STEventSource_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STEventSource_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		85F7B9D90681945151781EAD3DABD971 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = STEventSource/Classes/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		85F7B9D90681945151781EAD3DABD971 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = STEventSource/Classes/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		8F5FC6102C8AF72488C543ED9C138081 /* Pods-STEventSource_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STEventSource_Tests-dummy.m"; sourceTree = "<group>"; };
 		98A43518081FA1149FDA508A9F9C0966 /* Pods-STEventSource_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-STEventSource_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A6D37995273F9340FA2CC66FAF4419B6 /* STEventSourceMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = STEventSourceMessage.swift; path = STEventSource/Classes/STEventSourceMessage.swift; sourceTree = "<group>"; };
 		B07BE64D590889EF6B8570A8C8927E29 /* STEventSource-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "STEventSource-umbrella.h"; sourceTree = "<group>"; };
-		B159723C874A96F1271EE8A01CAFAF0F /* STEventSource-STEventSource_Privacy */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "STEventSource-STEventSource_Privacy"; path = STEventSource_Privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B159723C874A96F1271EE8A01CAFAF0F /* STEventSource_Privacy.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STEventSource_Privacy.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E68901AE4F5770946144A15AAF5414 /* Pods-STEventSource_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-STEventSource_Example.modulemap"; sourceTree = "<group>"; };
 		B6276FF7DCEFB3EDA580B663EE341EDC /* Pods-STEventSource_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-STEventSource_Tests-umbrella.h"; sourceTree = "<group>"; };
 		CBA7473597B64CEC145FB6FAA1334008 /* STEventSource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = STEventSource.debug.xcconfig; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		E9323936F61E678CAF359E82A21F130C /* Pods-STEventSource_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-STEventSource_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDCEE620F88565383D8A57081FD83D86 /* STEventSourceParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = STEventSourceParser.swift; path = STEventSource/Classes/STEventSourceParser.swift; sourceTree = "<group>"; };
 		EFE95799DF11E05D0F6C97019E16D7A1 /* Pods-STEventSource_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-STEventSource_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		F4A0454961BABD0D407CADC0E46F36A7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F4A0454961BABD0D407CADC0E46F36A7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F9A92833FCB15525EC680CA37211F5A9 /* Pods-STEventSource_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-STEventSource_Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,10 +134,10 @@
 		0BDB6A2F0D2E1B1E73D76CC5C3EDDA8F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6225B01F7E475545392C5B6775010F7B /* Pods-STEventSource_Example */,
-				5572540F6EE06EFDEEA7F7201381C89C /* Pods-STEventSource_Tests */,
-				74227B14622420B958DBC274981DA078 /* STEventSource */,
-				B159723C874A96F1271EE8A01CAFAF0F /* STEventSource-STEventSource_Privacy */,
+				6225B01F7E475545392C5B6775010F7B /* Pods_STEventSource_Example.framework */,
+				5572540F6EE06EFDEEA7F7201381C89C /* Pods_STEventSource_Tests.framework */,
+				74227B14622420B958DBC274981DA078 /* STEventSource.framework */,
+				B159723C874A96F1271EE8A01CAFAF0F /* STEventSource_Privacy.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 			);
 			name = "Pods-STEventSource_Example";
 			productName = Pods_STEventSource_Example;
-			productReference = 6225B01F7E475545392C5B6775010F7B /* Pods-STEventSource_Example */;
+			productReference = 6225B01F7E475545392C5B6775010F7B /* Pods_STEventSource_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4633C069FD67A73CF3BA13B9C745EE69 /* STEventSource */ = {
@@ -316,7 +316,7 @@
 			);
 			name = STEventSource;
 			productName = STEventSource;
-			productReference = 74227B14622420B958DBC274981DA078 /* STEventSource */;
+			productReference = 74227B14622420B958DBC274981DA078 /* STEventSource.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B7332D62546F0CB27AFADDF1DF6E6A5F /* Pods-STEventSource_Tests */ = {
@@ -335,7 +335,7 @@
 			);
 			name = "Pods-STEventSource_Tests";
 			productName = Pods_STEventSource_Tests;
-			productReference = 5572540F6EE06EFDEEA7F7201381C89C /* Pods-STEventSource_Tests */;
+			productReference = 5572540F6EE06EFDEEA7F7201381C89C /* Pods_STEventSource_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DA954FBFB75B42627823D158D6C4AA27 /* STEventSource-STEventSource_Privacy */ = {
@@ -352,7 +352,7 @@
 			);
 			name = "STEventSource-STEventSource_Privacy";
 			productName = STEventSource_Privacy;
-			productReference = B159723C874A96F1271EE8A01CAFAF0F /* STEventSource-STEventSource_Privacy */;
+			productReference = B159723C874A96F1271EE8A01CAFAF0F /* STEventSource_Privacy.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -405,7 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0378BDB31FD818E6DBED4CAB105C938 /* STEventSource-STEventSource_Privacy in Resources */,
+				F0378BDB31FD818E6DBED4CAB105C938 /* STEventSource_Privacy.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,8 +766,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
